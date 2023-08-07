@@ -87,7 +87,121 @@ a {
 
 /* --------------- MAIN --------------- */
 
+main {
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 15px;
+}
 
+main h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+input {
+    padding: 12px 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    width: 90%;
+}
+
+main div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div input {
+    align-self: center;
+}
+
+div p {
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 6px;
+    align-self: center;
+}
+
+.birthdate input {
+    width: 100%;
+}
+
+.tipo-perfil, .categorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tipo-perfil label {
+    width: 50%;
+    padding: 10px;
+    border-left: 1px solid #eee;
+}
+
+.tipo-perfil label:hover {
+    border-left-color: #68a3fc;
+    transition: 200ms;
+}
+
+.tipo-perfil input, .categorias input {
+    width: 13px;
+    margin-right: 10px;
+}
+
+.categorias label {
+    width: 50%;
+    padding: 10px;
+}
+
+.foto-perfil input {
+    width: 100%;
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.button-reset, .button-submit {
+    margin-top: 20px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 6px;
+}
+
+.button-reset {
+    width: 30%;
+    background-color: #fa3434;
+}
+
+.button-submit {
+    width: calc(70% - 15px);
+    background-color: #3483fa;
+    color: #fff;
+}
+
+.button-reset:hover {
+    background-color: #e33030;
+}
+
+.button-submit:hover {
+    background-color: #2f75de;
+}
 
 /* --------------- FOOTER --------------- */
 
