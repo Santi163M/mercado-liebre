@@ -119,7 +119,7 @@ main h3 {
     flex-wrap: wrap;
     align-items: center;
     padding: 20px;
-    gap: 20px;
+    gap: 20px 30px;
 }
 
 input {
@@ -159,13 +159,18 @@ div p {
 
 .tipo-perfil label {
     width: 50%;
+    max-width: 150px;
+    min-width: 120px;
     padding: 10px;
     border-left: 1px solid #eee;
+    transition:
+        background-left-color, 200ms,
+        background-color, 400ms;
 }
 
 .tipo-perfil label:hover {
     border-left-color: #68a3fc;
-    transition: 200ms;
+    background-color: #f3f3f3;
 }
 
 .tipo-perfil input, .categorias input {
@@ -175,11 +180,23 @@ div p {
 
 .categorias label {
     width: 50%;
+    max-width: 105px;
+    min-width: 105px;
     padding: 10px;
+}
+
+.categorias label:hover {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    transition: 300ms;
 }
 
 .foto-perfil input {
     width: 100%;
+}
+
+.contraseñas {
+    gap: 20px;
 }
 
 .contenedor-botones {
@@ -190,7 +207,6 @@ div p {
 }
 
 .button-reset, .button-submit {
-    margin-top: 20px;
     padding: 8px 0;
     border: none;
     border-radius: 6px;
@@ -309,5 +325,51 @@ footer i {
 @media (min-width: 769px) {
     .nav-bar {
         font-size: 1.2em;
+    }
+
+    input {
+        width: 45%;
+    }
+
+    .formulario-registro {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .birthdate, .tipo-perfil, .categorias {
+        width: 45%;
+    }
+
+    #domicilio {
+        align-self: flex-end;
+    }
+
+    .tipo-perfil {
+        align-self: flex-start;
+    }
+
+    .tipo-perfil label {
+        min-width: 220px;
+    }
+
+    .foto-perfil p {
+        font-size: 1.5em;
+    }
+
+    .foto-perfil input {
+        height: 102px;
+        padding: 20px 20px;
+    }
+
+    .foto-perfil, .contraseñas {
+        width: 45%;
+    }
+
+    .contraseñas {
+        align-self: flex-end;
+    }
+
+    #password, #r-password {
+        width: 100%;
     }
 }
