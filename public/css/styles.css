@@ -24,11 +24,12 @@ header {
 .header-contenedor {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .logo {
     width: 50%;
-    margin-left: 10px;
+    padding: 0 10px;
 }
 
 .busqueda {
@@ -64,8 +65,9 @@ header {
 }
 
 header p {
+    width: 100%;
     text-align: center;
-    margin: 20px 0;
+    padding: 20px 0;
 }
 
 .nav-bar {
@@ -248,22 +250,26 @@ footer i {
         flex-wrap: wrap;
     }
 
-    .header-contenedor {
-        width: 70%;
+    .busqueda {
+        margin: inherit;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .busqueda {
+        margin: 0 30px;
+        width: calc(60% - 60px);
     }
 
     header p {
-        width: calc(30% - 10px);
-        margin: 0 10px 0 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 1.2em;
     }
 
     .nav-bar {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .nav-bar ul {
@@ -275,8 +281,20 @@ footer i {
 }
 
 @media (min-width: 769px) {
+    .busqueda {
+        margin: 0 0 0 30px;
+        width: calc(35% - 30px);
+    }
+
+    header p {
+        margin: 0 15px;
+        width: calc(25% - 30px);
+        align-self: center;
+    }
+
     .nav-bar {
         font-size: 1.2em;
+        margin-top: 30px;
     }
 
     article {

@@ -16,6 +16,5 @@ app.post('/register', (req, res) => {
 });
 
 app.use(express.static('public'));
-console.log(path.resolve(__dirname, 'public'));
 
-app.listen(3100, () => console.log('Servidor iniciado en el puerto 3100'));
+app.listen(8000, () => console.log('Servidor iniciado en el puerto 3100'));
