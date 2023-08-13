@@ -33,12 +33,12 @@ header {
 }
 
 .busqueda {
-    width: calc(50% - 50px);
+    margin: 0 20px;
+    width: calc(50% - 40px);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 0 20px;
 }
 
 .busqueda input {
@@ -320,24 +320,6 @@ footer i {
 }
 
 @media (min-width: 481px) {
-    header {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .busqueda {
-        margin: inherit;
-    }
-
-    .logo {
-        width: 40%;
-    }
-
-    .busqueda {
-        margin: 0 30px;
-        width: calc(60% - 60px);
-    }
-
     header p {
         font-size: 1.2em;
     }
@@ -381,14 +363,20 @@ footer i {
 }
 
 @media (min-width: 769px) {
+    .logo {
+        width: 25%;
+    }
+
     .busqueda {
-        margin: 0 0 0 30px;
-        width: calc(35% - 30px);
+        margin: 0 0 0 20px;
+        width: calc(45% - 40px);
+        align-self: center;
     }
 
     header p {
-        margin: 0 15px;
-        width: calc(25% - 30px);
+        font-size: 1.2em;
+        padding: 0 15px;
+        width: 30%;
         align-self: center;
     }
 
