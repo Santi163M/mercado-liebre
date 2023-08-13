@@ -25,4 +25,5 @@ app.post('/login', (req, res) => {
 
 app.use(express.static('public'));
 
-app.listen(8000, () => console.log('Servidor iniciado en el puerto 8000'));
+const port = process.env.PORT || 8000;
+app.listen(port, () => console.log(`Servidor iniciado en el puerto ${port}`));
