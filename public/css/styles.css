@@ -46,10 +46,17 @@ header {
     padding: 10px;
     border: none;
     border-radius: 10px;
+    transition: all 200ms;
 }
 
 .busqueda input:focus {
     outline: none;
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+
+.busqueda input:focus ~ button {
+    padding: 12px 10px;
 }
 
 .busqueda button {
@@ -62,16 +69,18 @@ header {
     background-color: white;
     position: absolute;
     right: 0;
+    transition: all 200ms;
 }
 
 .busqueda button:hover {
-    background-color: #f5f5f5;
+    background-color: #f3f3f3;
 }
 
 header p {
     width: 100%;
     text-align: center;
     padding: 20px 0;
+    cursor: default;
 }
 
 .nav-bar {
@@ -86,6 +95,10 @@ header p {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .burger-menu {

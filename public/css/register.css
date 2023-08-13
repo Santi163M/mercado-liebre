@@ -46,10 +46,17 @@ header {
     padding: 10px;
     border: none;
     border-radius: 10px;
+    transition: all 200ms;
 }
 
 .busqueda input:focus {
     outline: none;
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+
+.busqueda input:focus ~ button {
+    padding: 12px 10px;
 }
 
 .busqueda button {
@@ -62,6 +69,7 @@ header {
     background-color: white;
     position: absolute;
     right: 0;
+    transition: all 200ms;
 }
 
 .busqueda button:hover {
@@ -72,6 +80,7 @@ header p {
     width: 100%;
     text-align: center;
     padding: 20px 0;
+    cursor: default;
 }
 
 .nav-bar {
@@ -86,6 +95,10 @@ header p {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .burger-menu {
@@ -128,11 +141,15 @@ main h3 {
     gap: 20px 30px;
 }
 
-input {
+main input {
+    width: 90%;
     padding: 12px 10px;
     border: 1px solid #aaa;
     border-radius: 6px;
-    width: 90%;
+}
+
+main input:focus {
+    outline-color: #4d84d6;
 }
 
 main div {
@@ -218,6 +235,7 @@ main div p {
     border: none;
     border-radius: 6px;
     max-width: 450px;
+    transition: all 0.4s;
 }
 
 .button-reset {
@@ -232,17 +250,19 @@ main div p {
 }
 
 .button-reset:hover {
-    background-color: #e33030;
+    background-color: #d42424;
 }
 
 .button-submit:hover {
-    background-color: #2f75de;
+    background-color: #2765c2;
 }
 
 /* --------------- FOOTER --------------- */
 
 footer {
     background-color: white;
+    padding-top: 24px;
+    cursor: default;
 }
 
 footer section {
@@ -264,6 +284,7 @@ footer section {
 
 footer i {
     font-size: 2em;
+    color: #1259c3;
 }
 
 .beneficios {
@@ -272,7 +293,7 @@ footer i {
 }
 
 .copyright {
-    padding: 15px;
+    padding: 10px;
 }
 
 /* --------------- MEDIA QUERIES --------------- */
@@ -403,5 +424,22 @@ footer i {
 
     .contraseñas {
         align-self: flex-end;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer section {
+        width: 33.3%;
+    }
+    
+    footer i:hover {
+        color: #EAC926;
+    }
+
+    footer i {
+        transition: color 400ms;
     }
 }

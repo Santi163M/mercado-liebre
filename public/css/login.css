@@ -46,10 +46,17 @@ header {
     padding: 10px;
     border: none;
     border-radius: 10px;
+    transition: all 200ms;
 }
 
 .busqueda input:focus {
     outline: none;
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+
+.busqueda input:focus ~ button {
+    padding: 12px 10px;
 }
 
 .busqueda button {
@@ -62,6 +69,7 @@ header {
     background-color: white;
     position: absolute;
     right: 0;
+    transition: all 200ms;
 }
 
 .busqueda button:hover {
@@ -72,6 +80,7 @@ header p {
     width: 100%;
     text-align: center;
     padding: 20px 0;
+    cursor: default;
 }
 
 .nav-bar {
@@ -86,6 +95,10 @@ header p {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .burger-menu {
@@ -136,6 +149,10 @@ main h3 {
     border-radius: 6px;
 }
 
+.formulario-login input:focus {
+    outline-color: #4d84d6;
+}
+
 .formulario-login button {
     width: 50%;
     padding: 12px 0;
@@ -154,6 +171,8 @@ main h3 {
 
 footer {
     background-color: white;
+    padding-top: 24px;
+    cursor: default;
 }
 
 footer section {
@@ -175,6 +194,7 @@ footer section {
 
 footer i {
     font-size: 2em;
+    color: #1259c3;
 }
 
 .beneficios {
@@ -267,5 +287,22 @@ footer i {
 
     main {
         margin: 40px auto;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer section {
+        width: 33.3%;
+    }
+    
+    footer i:hover {
+        color: #EAC926;
+    }
+
+    footer i {
+        transition: color 400ms;
     }
 }
