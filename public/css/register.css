@@ -170,7 +170,6 @@ main div p {
     padding: 10px;
     border-left: 1px solid #eee;
     transition:
-        background-left-color, 200ms,
         background-color, 400ms;
 }
 
